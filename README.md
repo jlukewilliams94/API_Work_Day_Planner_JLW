@@ -23,7 +23,8 @@ THEN the saved events persist
 ```
 ### 1. In order to add the current data and time to the top of the calander, I targeted the $("#currentDay") id and use the jQuery: moment().format("MMMM Do YYYY, h:mm a");
 
-![Screen Shot 2020-02-10 at 6 34 47 PM](https://user-images.githubusercontent.com/59854275/75398822-b87b1900-58c8-11ea-9c20-93d5e9162b33.png)
+![Screen Shot 2020-02-26 at 6 58 39 PM](https://user-images.githubusercontent.com/59854275/75399357-02183380-58ca-11ea-8279-82446d6eb7b1.png)
+
 
 ### 2. In order to create the day planner I built three seperate columns for Time of Day, Activity Input and Save Button using jQuery and a For Loop. 
 
