@@ -9,8 +9,11 @@ $(document).ready(function() {
 
     var myPlans = JSON.parse(localStorage.getItem("savedPlans"));
 
+    if(myPlans !== null) {
     activityArray = myPlans
-    
+    } else {
+    activityArray= []
+    }
 
     //Empties Div with Id Day Planner before for loop is run.
     var dayPlanner = $("#dayPlanner");
@@ -109,10 +112,11 @@ $(document).ready(function() {
         console.log(activityValue);                    
 
     //Stores the input value corresponding to clicked save button to Activity Array                                   
-        activityArray[saveIdNum] = activityValue;                            
+        activityArray[saveIdNum] = activityValue;  
+        console.log(activityArray)                          
     //Saves Activity Array in Local Storage                                                   
         localStorage.setItem("savedPlans", JSON.stringify(activityArray));
-        console.log(activityArray)
+        console.log(activityValue)
     });        
 
 });                                                        
